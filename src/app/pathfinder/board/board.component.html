@@ -1,0 +1,46 @@
+<mat-toolbar>
+    <img src = '../../assets/testimage.ico' height="93" routerLink="/"/>
+    <button mat-flat-button color="primary" (click)="algorithmRunHandler($event)">{{selectedPathFinder}}</button>
+
+    <div *ngIf="algorithmMenu">
+    <button mat-button [matMenuTriggerFor]="menu">Select an Algorithms</button>
+        <mat-menu #menu="matMenu">
+            <button (click)="handleAlgorithmSelection($event)" mat-menu-item *ngFor="let item of algorithmMenu" >
+                 {{ item }}
+            </button>
+        </mat-menu>
+    </div>
+    
+    <div *ngIf="mazeMenu">
+        <button mat-button [matMenuTriggerFor]="maze">Select an Maze</button>
+        <mat-menu #maze="matMenu">
+            <button (click)="mazeAlgorithm($event)" mat-menu-item *ngFor="let item of mazeMenu" >
+                {{ item }}
+            </button>
+        </mat-menu>
+    </div>
+    
+    <span class="example-spacer"></span>
+    <span style="font-size:small">Speed &nbsp;</span>
+    <mat-slider min="10" max="500" step="10" >
+        <input matSliderThumb [(ngModel)]="colorNode.speed">
+    </mat-slider>
+
+    &nbsp;
+    <button mat-flat-button color="warn" (click)="resetBoard()">Reset Board</button>
+</mat-toolbar>
+
+
+
+
+
+<div style="padding: 0.5%; width: 99%; height:95%; position: fixed;" #boardContainer id = 'boardContainer'>
+    <div>
+        <table >
+            <tr *ngFor="let row of rows; let i = index;">
+                <td [id]="(i*columns.length)+j" appNode *ngFor="let col of columns; let j = index"  >
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

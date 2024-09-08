@@ -1,0 +1,40 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*border: 0.5px solid #c5e2db;*/
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+mat-slider {
+  width: 100px;
+}
+
+.small-box{
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    border: 1px solid #4a5e58; 
+}
+
+.disable{
+    pointer-events: none;
+}
+
+.enable{
+    pointer-events: all;
+}
+
+th, td {
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: 0.5px solid #c5e2db;
+    padding: 0%;
+    margin: 0%;
+    height: 24px;
+    width: 24px;
+}
