@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "ng deploy --base-href=https://rohitpjpti18.github.io/av-angular/",
-    "gitlabBuild": "ng build --base-href=/ui-projects/ --output-path=public/"
+    "gitlabBuild": "ng build --base-href=/spa-ui/ --output-path=public/"
   },
   "private": true,
   "dependencies": {
