@@ -4,7 +4,7 @@ import { PathfinderModule } from './pathfinder/pathfinder.module';
 
 const routes: Routes = [
   //{ path: 'pathfinder', loadChildren: () => import('./pathfinder/pathfinder.module').then(m => m.PathfinderModule)}
-  { path: '', redirectTo: '/personal', pathMatch: 'full'},
+  { path: '', redirectTo: '/pathfinder', pathMatch: 'full'},
   { path: 'path', redirectTo: '/pathfinder', pathMatch: 'full'}
 ];
 
