@@ -1,5 +1,5 @@
 # The Docker image that will be used to build your app
-image: node:18.16.0
+image: node:latest
 pages:
   cache:
     paths:
@@ -7,6 +7,9 @@ pages:
   script:
     - npm install -g @angular/cli
     - npm install 
+    - ng build --prod --base-href /spa-ui/
+    - mkdir public
+    - mv dist/spa-ui/* public/
     - npm run gitlabBuild
   artifacts:
     paths:
