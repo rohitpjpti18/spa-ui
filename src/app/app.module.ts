@@ -11,12 +11,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatMenuModule } from '@angular/material/menu'
-
 import { StoreModule } from '@ngrx/store'
 import { menuOptionReducer } from 'src/core/ngrx/menuoptions/menuoptions.reducer';
 import { FormsModule } from '@angular/forms';
 import { PersonalSiteModule } from './personalsite/personalsite.module';
-import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [

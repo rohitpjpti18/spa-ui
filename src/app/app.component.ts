@@ -8,7 +8,7 @@ import { reset } from 'src/core/ngrx/menuoptions/menuoptions.actions';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pathfinder-visualizer';
+  title = 'pathfindervisualizer';
 
   constructor(private store: Store<{menuOption: {algorithms: string[], mazePattern: string[]}}>) {
     

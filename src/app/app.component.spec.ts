@@ -26,7 +26,7 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('pathfinder-visualizer');
   });
 
-  it('should render title', () => {
+  it('should render itle', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
