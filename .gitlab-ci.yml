@@ -8,6 +8,7 @@ pages:
     - npm install -g @angular/cli
     - npm install 
     - npm run gitlabBuild
+    - cd public 
     - ls
   artifacts:
     paths:
