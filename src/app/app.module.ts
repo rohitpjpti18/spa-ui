@@ -36,7 +36,7 @@ import { APP_BASE_HREF } from '@angular/common';
     MatMenuModule,
     StoreModule.forRoot({menuOption: menuOptionReducer}, {})
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: '/spa-ui'}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
