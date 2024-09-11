@@ -7,7 +7,7 @@ pages:
   script:
     - npm install -g @angular/cli
     - npm install 
-    - npm run deploy
+    - npm gitlabBuild
     - cd public 
     - ls
   artifacts:
