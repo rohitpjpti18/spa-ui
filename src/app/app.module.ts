@@ -16,6 +16,7 @@ import { StoreModule } from '@ngrx/store'
 import { menuOptionReducer } from 'src/core/ngrx/menuoptions/menuoptions.reducer';
 import { FormsModule } from '@angular/forms';
 import { PersonalSiteModule } from './personalsite/personalsite.module';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { PersonalSiteModule } from './personalsite/personalsite.module';
     MatMenuModule,
     StoreModule.forRoot({menuOption: menuOptionReducer}, {})
   ],
-  providers: [],
+  providers: [{provide: APP_BASE_HREF, useValue: '/spa-ui'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
