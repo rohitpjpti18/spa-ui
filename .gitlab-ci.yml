@@ -7,7 +7,7 @@ pages:
   script:
     - npm install -g @angular/cli
     - npm install 
-    - ng build --prod --base-href /spa-ui/
+    - ng build --base-href /spa-ui/
     - mkdir public
     - mv dist/spa-ui/* public/
     - npm run gitlabBuild
